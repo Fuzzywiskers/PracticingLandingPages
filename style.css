@@ -2,6 +2,8 @@
 a{
     text-decoration: none;
     font-size: 20px;
+
+    color: #2d2958;
 }
 
 body{
@@ -10,6 +12,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 7fr 1fr;
     grid-template-rows: 3fr 1fr 3fr;
+
+    background-color: #d2c5d8;
 }
 
 .header{
@@ -23,16 +27,35 @@ body{
     grid-gap: 5em;
 }
 
+.title{
+    font-size: 70px;
+}
 
 
 /*speficic*/
 .title-one{
     grid-area: 2/2/2/2;
-    background-color: black;
-    color: white;
+    background-color: #90553c;
+    color: #d29f52;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 15px 15px #2d2958;
+    font-size: 70px;
+}
+
+.title-two{
+    grid-area: 2;
+    display: flex;
+    font-size: 70px;
+    color: #d29f52;
+    background-color: #2d2958;
+    height: 3vh;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
 }
 
 .body-one{
@@ -59,8 +82,80 @@ body{
     grid-template-rows: repeat(3, 1fr);
 }
 
+.paragraph-one{
+    background-color: #90553c;
+    grid-area: 3/2/5/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d2c5d8;
+    font-size: 30px;
+    margin-right: 20px;
+}
 
-.testDiv{
-    border: 3px solid black;
-    background-color: blue;
+.paragraph-two{
+    background-color: #d29f52;
+    grid-area: 8/2/12;
+    display: flex;
+    justify-content: center;
+    color: #2d2958;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.paragraph-three{
+    grid-area: 1/3;
+    align-self: end;
+    margin-bottom: 40px;
+    color: #d2c5d8;
+    text-shadow: 4px 3px 0px #90553c;
+    font-size: 50px;
+}
+
+.paragraph-four{
+    grid-area: 2/2/4/4;
+    background-color: #d29f52;
+    color: #2d2958;
+    font-size: 30px;
+    margin: 50px;
+    margin-left: -250px;
+}
+
+.photo-one{
+    grid-area: 1/1;
+    align-self: end;
+    justify-self: center;
+    background-color: #2d2958;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    rotate: -10deg;
+    margin-bottom: -100px;
+}
+
+
+/*colors*/
+.lPurple{
+    color:#d2c5d8;
+}
+.dPurple{
+    color:#2d2958;
+}
+.brown{
+    color:#90553c;
+}
+.yellow{
+    color: #d29f52;
+}
+.back-lPurple{
+    background-color: #d2c5d8;
+}
+.back-dPurple{
+    background-color: #2d2958;
+}
+.back-brown{
+    background-color: #90553c;
+}
+.back-yellow{
+    background-color: #d29f52;
 }
