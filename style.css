@@ -1,0 +1,66 @@
+/*basic*/
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 3fr 1fr 3fr;
+}
+
+.header{
+    margin-top: 40px;
+    grid-area: 1/2/1/2;
+    align-self: start;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+}
+
+
+
+/*speficic*/
+.title-one{
+    grid-area: 2/2/2/2;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-one{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 3fr 1fr 3fr;
+}
+
+.body-two{
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.body-three{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.testDiv{
+    border: 3px solid black;
+    background-color: blue;
+}
